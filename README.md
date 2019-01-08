@@ -1,73 +1,34 @@
 # mosquitokiller-info
 
-A GOOD PROJECT!
+A project for checking the personal mosquito zapper sensor feedback using the [Mosquitokiller-Bucket-Backend](https://github.com/NCKU-CCS/Mosquitokiller-Bucket-Backend)
 
 ## Getting Started
 
 #### Install package
+
+- You need to install `ruby` and `compass`
+    - for **Debian/Ubuntu** user
+    ```sh
+        $ sudo apt install ruby-compass
+    ```
+    - for **macOS** user (you are assumed with having homebrew installed)
+    ```sh
+        $ brew install ruby
+        $ gem install compass
+    ```
+
 ```
 npm install -i
 ```
-
 ## Usage
 
-build sass , js 
 ```
 $ gulp
 ```
-
-build hbs to html, and watch
-```
-$ ./bin/build -w
-```
-
-- Use `gulp` to construct it .
-- `canner-core` is your main component which you also use in `handlebar.js`.
-
-
-## Developer
-
-### gulp
-
-build sass , js , then watch
-```
-$ gulp
-``` 
-
-minify css , js
-```
-$ gulp minify-css
-$ gulp minify-js
-```
-
-
-concate all lib **js** or **css** file to one file ,  reduce request
-```
-$ gulp concate-css
-$ gulp concate-js
-```
-
-compress img ( It's usually use on final in your project)
-```
-$ gulp image
-```
-
-### canner-core
-
-build **hbs to html**
-```
-$ ./bin/build 
-```
-
-+ -w : watch
-+ -m : minify code
-
-## License
- © [rapirent]()
 
 ---
 ### About [GoGo Frontend ](GoGoFrontend.md)
-It helps you to construct and orginize your static code , quickly minify html , css , js , img.  
+It helps you to construct and orginize your static code , quickly minify html , css , js , img.
 
 Use [gulp](http://gulpjs.com) and [canner-core](https://www.npmjs.com/package/canner-core)
 ( The html's template is [hbs](http://handlebarsjs.com) )
