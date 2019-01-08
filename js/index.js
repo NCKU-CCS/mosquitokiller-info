@@ -64,8 +64,9 @@
     contentType: 'application/json',
     success: function(data) {
       var date = new Date()
+      var zeroPad = (date.getMonth() < 9)?'0':''
       date.setDate(date.getDate() - 1)
-      $("#yesterdayData").text(data[date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + ("00" + date.getDate()).slice(-2)][args]["sum"])
+      $("#yesterdayData").text(data[date.getFullYear() + "-" + zeroPad + (date.getMonth() + 1) + "-" + ("00" + date.getDate()).slice(-2)][args]["sum"])
     },
     fail: function(data) {
       console.log(data)
